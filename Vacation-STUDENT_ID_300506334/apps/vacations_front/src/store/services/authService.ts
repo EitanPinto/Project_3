@@ -46,7 +46,6 @@ async function validateFrontTokenLoginService(
   ): Promise<IverifyTokenResponse> {
   const result: AxiosResponse<any, any> = await axiosInstance.get(`/validate_front_token?frontToken=${frontToken}`);
   const { data } = result;
-  console.log(data, "ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo data !!!!");
   return data;
 };
 export {

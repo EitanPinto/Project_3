@@ -23,9 +23,7 @@ axiosInstance.interceptors.response.use(
 // response: XMLHttpRequest {data: undefined, onreadystatechange: null, readyState: 4, timeout: 0, withCredentials: false, …}
 // [[Prototype]]: Error
     // openModalError(....................);
-    return error;
+    return Promise.reject(error);
   }
 );
 
-
-export default axiosInstance;
